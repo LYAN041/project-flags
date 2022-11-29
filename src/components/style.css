@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+nav {
+   background-color: hsl(209, 23%, 22%);
+}
+
+#title-nav{
+    font-weight: 800;
+    margin-left: 95px;
+    margin-bottom: 0;
+}
+
+#btn-header{
+    height: 45px;
+    width: 200px;
+    font-weight: 300;
+    font-size: 14px;
+    background-color: hsl(209, 23%, 22%);
+    margin-right: 65px;
+}
+
+#ul-drop{
+    background-color: hsl(209, 23%, 22%);
+}
+
+#btn-search{
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    height: 45px;
+    width: 500px;
+    margin-left: 63px;
+}
+
+#card{
+    width: 18rem;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+#container{
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+h5{
+    font-weight: 800;
+}
+
+#strong{
+    font-weight: 800;
+}
+
+#img-countrie{
+    width: 35%;
+    height: 60%;
+}
+
+#modal-body{
+    display: flex;
+    align-items: center;
+    background-color: hsl(207, 26%, 17%);
+    color: white;
+}
+
+#modal-header{
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+#btn-x{
+    color: hsl(0, 0%, 100%);
+}
+
+#modal-footer{
+    background-color: hsl(209, 23%, 22%);
+}
+
+#title-countrie{
+    padding-bottom: 50px;
+    font-weight: 800;
+}
