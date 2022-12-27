@@ -2,6 +2,7 @@ import '../style.css'
 import { useEffect, useState } from 'react';
 import CardInfo from '../card-edit';
 import Header from '../header';
+import Loading from '../loading/loading';
 
 const url = "https://restcountries.com/v3.1/all";
 
@@ -44,8 +45,6 @@ const Card = () => {
       if (!res.ok) throw new Error("Something went wrong!");
 
       const data = await res.json();
-
-      console.log(data);
 
       setCountrie(data);
 
@@ -92,17 +91,15 @@ const Card = () => {
   return (
     <>
       <Header onSearch={getCountryByName} onSelect={getCountryByRegion} />
-      <div className='container d-flex flex-wrap mt-5' id='container'>
+      <div className='container-sm d-flex flex-wrap mt-5' id='container'>
 
-        {isLoading && !error && <div class="spinner-border text-primary" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>}
+        {isLoading && !error && <Loading/>}
         {error && !isLoading && window.alert("Nenhum país encontrado! Digite o nome em inglês")}
 
 
         {countries?.map((country) => (
           <div class="card" id="card">
-            <img src={country.flags.png} class="card-img-top w-100 h-50" />
+            <img src={country.flags.png} alt="country flag" class="card-img-top w-100 h-50" />
             <div class="card-body mt-2">
               <h5 class="card-title mb-3">{country.name.common}</h5>
               <p class="card-text">

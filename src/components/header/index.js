@@ -16,22 +16,22 @@ const Header = ({ onSearch, onSelect }) => {
     };
 
     return (
-        <div className="container-fluid mt-5 px-5">
+        <div className="container-sm-fluid mt-5 px-5">
             <div className="row">
-                <div className='col-4'>
+                <div className='col-sm-4'>
                 <form class="d-flex" role="search" onSubmit={submitHandler}>
-                
+
                     <input class="form-control"
                      id='btn-search'
                      type="text"
                      placeholder="Pesquisar"
                      aria-label="default input example"
                      value={input}
-                     onChange={(e) => setInput(e.target.value)}></input>
-
+                     onChange={(e) => setInput(e.target.value)}>
+                     </input>
                 </form>
                 </div>
-                <div className="col d-flex justify-content-end">
+                <div className="col-sm d-flex justify-content-end">
                     <div class="dropdown">
                         <button class="btn btn-secondary btn-lg dropdown-toggle" id='btn-header' type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Região
