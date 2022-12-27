@@ -37,11 +37,11 @@ const Header = ({ onSearch, onSelect }) => {
                             Região
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark" id='ul-drop'>
-                            <li><a class="dropdown-item active" onClick={() => selectHandler("Africa")} >Africa</a></li>
-                            <li><a class="dropdown-item" onClick={() => selectHandler("America")} >America</a></li>
-                            <li><a class="dropdown-item" onClick={() => selectHandler("Asia")} >Asia</a></li>
-                            <li><a class="dropdown-item" onClick={() => selectHandler("Europe")} >Europa</a></li>
-                            <li><a class="dropdown-item" onClick={() => selectHandler("Oceania")} >Oceania</a></li>
+                            <li><span class="dropdown-item active" onClick={() => selectHandler("Africa")} >Africa</span></li>
+                            <li><span class="dropdown-item" onClick={() => selectHandler("America")} >America</span></li>
+                            <li><span class="dropdown-item" onClick={() => selectHandler("Asia")} >Asia</span></li>
+                            <li><span class="dropdown-item" onClick={() => selectHandler("Europe")} >Europa</span></li>
+                            <li><span class="dropdown-item" onClick={() => selectHandler("Oceania")} >Oceania</span></li>
                         </ul>
                     </div>
                 </div>
